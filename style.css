@@ -1,0 +1,115 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #ffe6e6; /* Soft pink background */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    width: 400px;
+}
+
+h1 {
+    color: #ff69b4; /* Hot pink */
+    margin-bottom: 30px;
+}
+
+/* --- Flower Link Styling (index.html) --- */
+.flower-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #ff69b4;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.flower-link:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+    color: #ff1493; /* Deeper pink on hover */
+}
+
+.flower-icon {
+    font-size: 8rem; /* Large flower icon */
+    display: block;
+    line-height: 1;
+}
+
+.flower-link p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* --- Postcard Styling (second_page.html) --- */
+.postcard {
+    background-color: #fce4ec; /* Light rose */
+    border: 5px solid #ff69b4;
+    border-radius: 10px;
+    padding: 40px 20px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postcard:hover {
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+    transform: translateY(-5px);
+}
+
+.postcard-text {
+    font-size: 1.5rem;
+    color: #ff69b4;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* --- Love Message Styling --- */
+.message-box {
+    text-align: left;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff0f5; /* Very light pink */
+}
+
+.message-box h2 {
+    color: #ff69b4;
+    border-bottom: 2px solid #ffc0cb;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.message-box p {
+    line-height: 1.6;
+}
+
+.signature {
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #555;
+}
+
+.hidden {
+    display: none;
+}
