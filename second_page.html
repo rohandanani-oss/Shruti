@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Special Postcard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="center-content">
+    <div class="container">
+        <h1>You've Got Mail!</h1>
+        
+        <div class="postcard" id="postcardButton">
+            <p class="postcard-text">
+                Press the card to open it!
+            </p>
+        </div>
+        
+        <div class="message-box hidden" id="loveMessage">
+            <h2>My Dearest Love,</h2>
+            <p>
+                Every moment with you is a gift. You light up my world like the sun, and your smile is the most beautiful thing I've ever seen. Thank you for being you. I love you more than words can say! ❤️
+            </p>
+            <p class="signature">- Always Yours</p>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById('postcardButton').addEventListener('click', function() {
+            var messageBox = document.getElementById('loveMessage');
+            var postcardText = this.querySelector('.postcard-text');
+
+            // Hide the initial text and show the love message
+            postcardText.style.display = 'none';
+            messageBox.classList.remove('hidden');
+
+            // Optional: Change the look of the "card" once opened
+            this.style.backgroundColor = '#f0e6ff'; // Light purple/lavender
+            this.style.transform = 'scale(1.05)';
+            this.style.cursor = 'default';
+        });
+    </script>
+</body>
+</html>
